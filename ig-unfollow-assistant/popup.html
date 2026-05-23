@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IG Compare</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <div class="title">IG Local Compare</div>
+    <div class="sub">Takipçi / Takip edilen listelerini topla ve karşılaştır.</div>
+  </header>
+
+  <section class="card">
+    <div class="row">
+      <button id="btnScanFollowers" class="btn">Takipçileri tara</button>
+      <button id="btnScanFollowing" class="btn">Takip ettiklerimi tara</button>
+    </div>
+    <div class="row">
+      <button id="btnCompute" class="btn secondary">Karşılaştır</button>
+      <button id="btnClear" class="btn danger">Verileri temizle</button>
+    </div>
+<div class="status" id="status">Hazır.</div>
+
+    <div class="small">
+      İpucu: Tarama için Instagram'da profilinizin <b>followers</b> / <b>following</b> penceresi açık olmalı.
+      Veriler sadece <b>chrome.storage.local</b>'da tutulur.
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="row between">
+      <div>
+        <div class="h">Beni takip etmeyenler</div>
+        <div class="small" id="counts">—</div>
+      </div>
+      <div class="row">
+        <button id="btnOpenSelected" class="btn tiny">Seçilen profilleri aç</button>
+      </div>
+    </div>
+
+    <div class="list" id="list"></div>
+  </section>
+
+  <footer class="small">
+    Not: Chrome pop-up odağı kaybedince otomatik kapanır (Chrome kısıtı). Tarama başlatınca Instagram sekmesine geçip modalı açık tut.
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

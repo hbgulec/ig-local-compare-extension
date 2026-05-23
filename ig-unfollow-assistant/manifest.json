@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "IG Local Compare + Unfollow Assistant",
+  "version": "1.0.0",
+  "description": "Takipçi/Takip edilen listelerini localde topla, karşılaştır, beni takip etmeyenleri bul. İsteğe bağlı profil sayfasında tek tık unfollow asist.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.instagram.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "IG Compare"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.instagram.com/*"
+      ],
+      "js": [
+        "content_scan.js",
+        "content_unfollow.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
