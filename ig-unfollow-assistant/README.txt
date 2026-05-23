@@ -1,30 +1,32 @@
-# IG Local Compare + Unfollow Assistant (Chrome Extension)
+#G Local Compare + Unfollow Assistant (Chrome Extension)
 
-## Ne yapar?
-- Instagram'da **followers** ve **following** listelerini (modal pencereden) otomatik kaydırarak toplar.
-- Verileri **sadece kendi bilgisayarında** (chrome.storage.local) tutar.
-- "Beni takip etmeyenler" listesini çıkarır.
-- Seçtiklerin profillerini sekme olarak açar.
-- Profil sayfasında sağ altta çıkan **Unfollow Assist** düğmesi ile (kullanıcı tıklamasıyla) unfollow adımını hızlandırır.
+## What does it do?
+- Automatically scrolls through Instagram's **followers** and **following** lists (from the modal window) and collects them.
+- Stores the data **only on your own computer** (chrome.storage.local).
+- Creates a list of "people who don't follow me".
+- Opens selected profiles in tabs.
+- Speeds up the unfollow process (by user click) with the **Unfollow Assist** button that appears in the bottom right of the profile page.
 
-> Not: Instagram arayüzü / sınırlamaları değişebilir. Çok hızlı/çok fazla işlem hesabını kısıtlatabilir.
+> Note: Instagram interface/limitations may change. Performing too many actions too quickly may restrict your account.
 
-## Kurulum
+## Installation
 1. Chrome > `chrome://extensions`
-2. Sağ üst: **Developer mode** (Geliştirici modu) aç
-3. **Load unpacked** (Paketlenmemiş yükle) > bu klasörü seç
+2. Top right: Turn on **Developer mode**
+3. **Load unpacked** > select this folder
 
-## Kullanım
-1. Instagram'da kendi profilinde şu linklerden birini aç (giriş yapmış ol):
-   - /followers/
-   - /following/
-2. Pop-up'tan:
-   - **Takipçileri tara**
-   - **Takip ettiklerimi tara**
-3. Sonra **Karşılaştır**
-4. Listeden seçim yap > **Seçilen profilleri aç**
-5. Açılan her profilde sağ alttaki **Unfollow Assist** ile unfollow et (tek tık).
+## Usage
+1. Open one of these links on your Instagram profile (be logged in):
+- /followers/
+- /following/
+2. From the pop-up:
+- **Browse followers**
+- **Browse who I follow**
+3. Then **Compare**
+4. Select from the list > **Open selected profiles**
+5. Unfollow each profile using **Unfollow Assist** in the bottom right (one click).
 
-## Güvenlik / Gizlilik
-- Veri dışarı gönderilmez. Ağ isteği atmaz.
-- Yalnızca Instagram alanında çalışır.
+## Security / Privacy
+- No data is sent externally. No network requests are made. - Only works within the Instagram domain.
+
+This project is intended for educational and personal productivity purposes.
+Users are responsible for complying with Instagram's Terms of Service.
