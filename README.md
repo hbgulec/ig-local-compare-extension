@@ -1,4 +1,4 @@
-#G Local Compare + Unfollow Assistant (Chrome Extension)
+#IG Local Compare + Unfollow Assistant (Chrome Extension)
 
 ## What does it do?
 - Automatically scrolls through Instagram's **followers** and **following** lists (from the modal window) and collects them.
